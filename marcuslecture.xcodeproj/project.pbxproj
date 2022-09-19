@@ -3,12 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39200B7F49E802828C88611A /* Pods_marcuslectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6226F96A0143B04E29CF64F7 /* Pods_marcuslectureTests.framework */; };
+		92A3F5455AF91802BA0A5741 /* Pods_marcuslecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB041E0510F1CA868B52FF1D /* Pods_marcuslecture.framework */; };
+		AB39619E28D7026500CDAC60 /* SplashStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB39619D28D7026500CDAC60 /* SplashStoryBoard.storyboard */; };
+		AB3961A028D7027C00CDAC60 /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB39619F28D7027C00CDAC60 /* LoginStoryBoard.storyboard */; };
+		AB3961A228D7051100CDAC60 /* SpalshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3961A128D7051100CDAC60 /* SpalshViewController.swift */; };
+		AB3961A428D7053200CDAC60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3961A328D7053200CDAC60 /* LoginViewController.swift */; };
+		AB3961A628D7676B00CDAC60 /* InitAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3961A528D7676B00CDAC60 /* InitAsset.xcassets */; };
+		AB65535628C8E155003D3739 /* MarcusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65535528C8E155003D3739 /* MarcusTableViewController.swift */; };
 		ABE1C40E28BE398700921AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C40D28BE398700921AE8 /* AppDelegate.swift */; };
-		ABE1C41028BE398700921AE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C40F28BE398700921AE8 /* SceneDelegate.swift */; };
 		ABE1C41228BE398700921AE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C41128BE398700921AE8 /* ViewController.swift */; };
 		ABE1C41528BE398700921AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE1C41328BE398700921AE8 /* Main.storyboard */; };
 		ABE1C41828BE398700921AE8 /* marcuslecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C41628BE398700921AE8 /* marcuslecture.xcdatamodeld */; };
@@ -16,6 +23,7 @@
 		ABE1C41D28BE399000921AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE1C41B28BE399000921AE8 /* LaunchScreen.storyboard */; };
 		ABE1C42828BE399100921AE8 /* marcuslectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C42728BE399100921AE8 /* marcuslectureTests.swift */; };
 		ABE1C43328BE399100921AE8 /* marcuslectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C43228BE399100921AE8 /* marcuslectureUITests.swift */; };
+		CC0F78E0210E896DDCBF5536 /* Pods_marcuslecture_marcuslectureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F5C2CE268F036A8727D805 /* Pods_marcuslecture_marcuslectureUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B8A3228325A4F8B6D333B48 /* Pods-marcuslecture-marcuslectureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture-marcuslectureUITests.release.xcconfig"; path = "Target Support Files/Pods-marcuslecture-marcuslectureUITests/Pods-marcuslecture-marcuslectureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CEA63B687C80C253AEF7EB7 /* Pods-marcuslectureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslectureTests.debug.xcconfig"; path = "Target Support Files/Pods-marcuslectureTests/Pods-marcuslectureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43F5C2CE268F036A8727D805 /* Pods_marcuslecture_marcuslectureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marcuslecture_marcuslectureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6226F96A0143B04E29CF64F7 /* Pods_marcuslectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marcuslectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D18B697DCCFD6894204476 /* Pods-marcuslecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture.debug.xcconfig"; path = "Target Support Files/Pods-marcuslecture/Pods-marcuslecture.debug.xcconfig"; sourceTree = "<group>"; };
+		AB39619D28D7026500CDAC60 /* SplashStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashStoryBoard.storyboard; sourceTree = "<group>"; };
+		AB39619F28D7027C00CDAC60 /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
+		AB3961A128D7051100CDAC60 /* SpalshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpalshViewController.swift; sourceTree = "<group>"; };
+		AB3961A328D7053200CDAC60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AB3961A528D7676B00CDAC60 /* InitAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InitAsset.xcassets; sourceTree = "<group>"; };
+		AB65535528C8E155003D3739 /* MarcusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcusTableViewController.swift; sourceTree = "<group>"; };
 		ABE1C40A28BE398700921AE8 /* marcuslecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marcuslecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE1C40D28BE398700921AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABE1C40F28BE398700921AE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ABE1C41128BE398700921AE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABE1C41428BE398700921AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABE1C41728BE398700921AE8 /* marcuslecture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = marcuslecture.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +69,10 @@
 		ABE1C42E28BE399100921AE8 /* marcuslectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marcuslectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE1C43228BE399100921AE8 /* marcuslectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marcuslectureUITests.swift; sourceTree = "<group>"; };
 		ABE1C43428BE399100921AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB041E0510F1CA868B52FF1D /* Pods_marcuslecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marcuslecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D153142FFC8E79707152A663 /* Pods-marcuslecture-marcuslectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture-marcuslectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-marcuslecture-marcuslectureUITests/Pods-marcuslecture-marcuslectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F514D6AB9A99EC98A5A4608C /* Pods-marcuslecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture.release.xcconfig"; path = "Target Support Files/Pods-marcuslecture/Pods-marcuslecture.release.xcconfig"; sourceTree = "<group>"; };
+		FE66D29BCF1C93AA19FD1B38 /* Pods-marcuslectureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslectureTests.release.xcconfig"; path = "Target Support Files/Pods-marcuslectureTests/Pods-marcuslectureTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A3F5455AF91802BA0A5741 /* Pods_marcuslecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39200B7F49E802828C88611A /* Pods_marcuslectureTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +96,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0F78E0210E896DDCBF5536 /* Pods_marcuslecture_marcuslectureUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BB049392A3D6DEB31F22708 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB041E0510F1CA868B52FF1D /* Pods_marcuslecture.framework */,
+				43F5C2CE268F036A8727D805 /* Pods_marcuslecture_marcuslectureUITests.framework */,
+				6226F96A0143B04E29CF64F7 /* Pods_marcuslectureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB39619628D701B400CDAC60 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AB39619728D701C800CDAC60 /* A0_Init */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AB39619728D701C800CDAC60 /* A0_Init */ = {
+			isa = PBXGroup;
+			children = (
+				AB39619A28D701F300CDAC60 /* Main */,
+				AB39619928D701E700CDAC60 /* Resource */,
+				AB39619828D701D800CDAC60 /* UserInterface */,
+			);
+			path = A0_Init;
+			sourceTree = "<group>";
+		};
+		AB39619828D701D800CDAC60 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				AB39619D28D7026500CDAC60 /* SplashStoryBoard.storyboard */,
+				AB39619F28D7027C00CDAC60 /* LoginStoryBoard.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		AB39619928D701E700CDAC60 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AB3961A528D7676B00CDAC60 /* InitAsset.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		AB39619A28D701F300CDAC60 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB39619C28D7021800CDAC60 /* Login */,
+				AB39619B28D7020E00CDAC60 /* Splash */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AB39619B28D7020E00CDAC60 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AB3961A128D7051100CDAC60 /* SpalshViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		AB39619C28D7021800CDAC60 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AB3961A328D7053200CDAC60 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		ABE1C40128BE398700921AE8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +180,8 @@
 				ABE1C42628BE399100921AE8 /* marcuslectureTests */,
 				ABE1C43128BE399100921AE8 /* marcuslectureUITests */,
 				ABE1C40B28BE398700921AE8 /* Products */,
+				BE2E7A19A1A87D69E779B8AB /* Pods */,
+				5BB049392A3D6DEB31F22708 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +198,9 @@
 		ABE1C40C28BE398700921AE8 /* marcuslecture */ = {
 			isa = PBXGroup;
 			children = (
+				AB39619628D701B400CDAC60 /* Modules */,
+				AB65535528C8E155003D3739 /* MarcusTableViewController.swift */,
 				ABE1C40D28BE398700921AE8 /* AppDelegate.swift */,
-				ABE1C40F28BE398700921AE8 /* SceneDelegate.swift */,
 				ABE1C41128BE398700921AE8 /* ViewController.swift */,
 				ABE1C41328BE398700921AE8 /* Main.storyboard */,
 				ABE1C41928BE399000921AE8 /* Assets.xcassets */,
@@ -131,6 +229,19 @@
 			path = marcuslectureUITests;
 			sourceTree = "<group>";
 		};
+		BE2E7A19A1A87D69E779B8AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2D18B697DCCFD6894204476 /* Pods-marcuslecture.debug.xcconfig */,
+				F514D6AB9A99EC98A5A4608C /* Pods-marcuslecture.release.xcconfig */,
+				D153142FFC8E79707152A663 /* Pods-marcuslecture-marcuslectureUITests.debug.xcconfig */,
+				0B8A3228325A4F8B6D333B48 /* Pods-marcuslecture-marcuslectureUITests.release.xcconfig */,
+				2CEA63B687C80C253AEF7EB7 /* Pods-marcuslectureTests.debug.xcconfig */,
+				FE66D29BCF1C93AA19FD1B38 /* Pods-marcuslectureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE1C43728BE399100921AE8 /* Build configuration list for PBXNativeTarget "marcuslecture" */;
 			buildPhases = (
+				5F7E3F90C3950822D44970EC /* [CP] Check Pods Manifest.lock */,
 				ABE1C40628BE398700921AE8 /* Sources */,
 				ABE1C40728BE398700921AE8 /* Frameworks */,
 				ABE1C40828BE398700921AE8 /* Resources */,
+				9859864D05AFB3A3A5F9BAD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE1C43A28BE399100921AE8 /* Build configuration list for PBXNativeTarget "marcuslectureTests" */;
 			buildPhases = (
+				87185B791686F1E7C46C80C6 /* [CP] Check Pods Manifest.lock */,
 				ABE1C41F28BE399100921AE8 /* Sources */,
 				ABE1C42028BE399100921AE8 /* Frameworks */,
 				ABE1C42128BE399100921AE8 /* Resources */,
@@ -173,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE1C43D28BE399100921AE8 /* Build configuration list for PBXNativeTarget "marcuslectureUITests" */;
 			buildPhases = (
+				C63306AF955A836402D26809 /* [CP] Check Pods Manifest.lock */,
 				ABE1C42A28BE399100921AE8 /* Sources */,
 				ABE1C42B28BE399100921AE8 /* Frameworks */,
 				ABE1C42C28BE399100921AE8 /* Resources */,
+				C4ED2143CB132AB3C39F1FAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +352,9 @@
 			files = (
 				ABE1C41D28BE399000921AE8 /* LaunchScreen.storyboard in Resources */,
 				ABE1C41A28BE399000921AE8 /* Assets.xcassets in Resources */,
+				AB39619E28D7026500CDAC60 /* SplashStoryBoard.storyboard in Resources */,
+				AB3961A028D7027C00CDAC60 /* LoginStoryBoard.storyboard in Resources */,
+				AB3961A628D7676B00CDAC60 /* InitAsset.xcassets in Resources */,
 				ABE1C41528BE398700921AE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,15 +375,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F7E3F90C3950822D44970EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marcuslecture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87185B791686F1E7C46C80C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marcuslectureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9859864D05AFB3A3A5F9BAD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marcuslecture/Pods-marcuslecture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marcuslecture/Pods-marcuslecture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marcuslecture/Pods-marcuslecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4ED2143CB132AB3C39F1FAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marcuslecture-marcuslectureUITests/Pods-marcuslecture-marcuslectureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marcuslecture-marcuslectureUITests/Pods-marcuslecture-marcuslectureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marcuslecture-marcuslectureUITests/Pods-marcuslecture-marcuslectureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C63306AF955A836402D26809 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marcuslecture-marcuslectureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABE1C40628BE398700921AE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3961A428D7053200CDAC60 /* LoginViewController.swift in Sources */,
 				ABE1C41228BE398700921AE8 /* ViewController.swift in Sources */,
+				AB3961A228D7051100CDAC60 /* SpalshViewController.swift in Sources */,
 				ABE1C41828BE398700921AE8 /* marcuslecture.xcdatamodeld in Sources */,
 				ABE1C40E28BE398700921AE8 /* AppDelegate.swift in Sources */,
-				ABE1C41028BE398700921AE8 /* SceneDelegate.swift in Sources */,
+				AB65535628C8E155003D3739 /* MarcusTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +661,7 @@
 		};
 		ABE1C43828BE399100921AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D18B697DCCFD6894204476 /* Pods-marcuslecture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +681,7 @@
 		};
 		ABE1C43928BE399100921AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F514D6AB9A99EC98A5A4608C /* Pods-marcuslecture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +701,7 @@
 		};
 		ABE1C43B28BE399100921AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEA63B687C80C253AEF7EB7 /* Pods-marcuslectureTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +724,7 @@
 		};
 		ABE1C43C28BE399100921AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE66D29BCF1C93AA19FD1B38 /* Pods-marcuslectureTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +747,7 @@
 		};
 		ABE1C43E28BE399100921AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D153142FFC8E79707152A663 /* Pods-marcuslecture-marcuslectureUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +768,7 @@
 		};
 		ABE1C43F28BE399100921AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8A3228325A4F8B6D333B48 /* Pods-marcuslecture-marcuslectureUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
