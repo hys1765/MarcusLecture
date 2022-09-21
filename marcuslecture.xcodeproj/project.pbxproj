@@ -14,7 +14,9 @@
 		AB3961A228D7051100CDAC60 /* SpalshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3961A128D7051100CDAC60 /* SpalshViewController.swift */; };
 		AB3961A428D7053200CDAC60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3961A328D7053200CDAC60 /* LoginViewController.swift */; };
 		AB3961A628D7676B00CDAC60 /* InitAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3961A528D7676B00CDAC60 /* InitAsset.xcassets */; };
-		AB65535628C8E155003D3739 /* MarcusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB65535528C8E155003D3739 /* MarcusTableViewController.swift */; };
+		AB540E1828DA02A200FA97A5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB540E1728DA02A200FA97A5 /* MainStoryboard.storyboard */; };
+		AB540E1A28DA034700FA97A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB540E1928DA034700FA97A5 /* Assets.xcassets */; };
+		AB540E1E28DA046E00FA97A5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB540E1D28DA046E00FA97A5 /* LoginViewModel.swift */; };
 		ABE1C40E28BE398700921AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C40D28BE398700921AE8 /* AppDelegate.swift */; };
 		ABE1C41228BE398700921AE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C41128BE398700921AE8 /* ViewController.swift */; };
 		ABE1C41528BE398700921AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE1C41328BE398700921AE8 /* Main.storyboard */; };
@@ -54,7 +56,9 @@
 		AB3961A128D7051100CDAC60 /* SpalshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpalshViewController.swift; sourceTree = "<group>"; };
 		AB3961A328D7053200CDAC60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AB3961A528D7676B00CDAC60 /* InitAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InitAsset.xcassets; sourceTree = "<group>"; };
-		AB65535528C8E155003D3739 /* MarcusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcusTableViewController.swift; sourceTree = "<group>"; };
+		AB540E1728DA02A200FA97A5 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AB540E1928DA034700FA97A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB540E1D28DA046E00FA97A5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ABE1C40A28BE398700921AE8 /* marcuslecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marcuslecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE1C40D28BE398700921AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE1C41128BE398700921AE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 		AB39619628D701B400CDAC60 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AB540E1328DA011E00FA97A5 /* A1_Main */,
 				AB39619728D701C800CDAC60 /* A0_Init */,
 			);
 			path = Modules;
@@ -169,8 +174,58 @@
 			isa = PBXGroup;
 			children = (
 				AB3961A328D7053200CDAC60 /* LoginViewController.swift */,
+				AB540E1D28DA046E00FA97A5 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		AB540E1328DA011E00FA97A5 /* A1_Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB540E1628DA013E00FA97A5 /* Main */,
+				AB540E1528DA013600FA97A5 /* Resource */,
+				AB540E1428DA012C00FA97A5 /* UserInterface */,
+			);
+			path = A1_Main;
+			sourceTree = "<group>";
+		};
+		AB540E1428DA012C00FA97A5 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				AB540E1728DA02A200FA97A5 /* MainStoryboard.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		AB540E1528DA013600FA97A5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AB540E1928DA034700FA97A5 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		AB540E1628DA013E00FA97A5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB540E1C28DA038D00FA97A5 /* Main */,
+				AB540E1B28DA037F00FA97A5 /* MainPage */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AB540E1B28DA037F00FA97A5 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		AB540E1C28DA038D00FA97A5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		ABE1C40128BE398700921AE8 = {
@@ -199,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				AB39619628D701B400CDAC60 /* Modules */,
-				AB65535528C8E155003D3739 /* MarcusTableViewController.swift */,
 				ABE1C40D28BE398700921AE8 /* AppDelegate.swift */,
 				ABE1C41128BE398700921AE8 /* ViewController.swift */,
 				ABE1C41328BE398700921AE8 /* Main.storyboard */,
@@ -353,8 +407,10 @@
 				ABE1C41D28BE399000921AE8 /* LaunchScreen.storyboard in Resources */,
 				ABE1C41A28BE399000921AE8 /* Assets.xcassets in Resources */,
 				AB39619E28D7026500CDAC60 /* SplashStoryBoard.storyboard in Resources */,
+				AB540E1828DA02A200FA97A5 /* MainStoryboard.storyboard in Resources */,
 				AB3961A028D7027C00CDAC60 /* LoginStoryBoard.storyboard in Resources */,
 				AB3961A628D7676B00CDAC60 /* InitAsset.xcassets in Resources */,
+				AB540E1A28DA034700FA97A5 /* Assets.xcassets in Resources */,
 				ABE1C41528BE398700921AE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,7 +544,7 @@
 				AB3961A228D7051100CDAC60 /* SpalshViewController.swift in Sources */,
 				ABE1C41828BE398700921AE8 /* marcuslecture.xcdatamodeld in Sources */,
 				ABE1C40E28BE398700921AE8 /* AppDelegate.swift in Sources */,
-				AB65535628C8E155003D3739 /* MarcusTableViewController.swift in Sources */,
+				AB540E1E28DA046E00FA97A5 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
