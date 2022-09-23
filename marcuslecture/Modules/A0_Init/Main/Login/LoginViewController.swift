@@ -30,8 +30,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         bindInput()
         subscribe()
-//        self.bind(viewModel: self.viewModel)
-        // Do any additional setup after loading the view.
     }
     
     private func bindInput(){
@@ -39,7 +37,8 @@ class LoginViewController: UIViewController {
         passwordField.rx.text.orEmpty.bind(to: viewModel.pwText).disposed(by: disposeBag)
     }
     private func subscribe(){
-        viewModel.idValid.subscribe(onNext: {b in print("아이디가 적합합니다.")}).disposed(by: disposeBag)
-        viewModel.pwValid.subscribe(onNext: {b in print("패스워드가 적합합니다.")}).disposed(by: disposeBag)
+        viewModel.idValid.subscribe(onNext: {b in}).disposed(by: disposeBag)
+        viewModel.pwValid.subscribe(onNext: {b in }).disposed(by: disposeBag)
+        viewModel.loginBtnEnabled.subscribe(onNext: {b in self.loginBtn.isEnabled = b}).disposed(by: disposeBag)
     }
 }

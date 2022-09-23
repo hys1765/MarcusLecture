@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qq-dh-vby">
-                                                <rect key="frame" x="0.0" y="213" width="390" height="418"/>
+                                                <rect key="frame" x="0.0" y="200" width="390" height="444"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmS-eC-lHi">
                                                         <rect key="frame" x="19" y="0.0" width="78" height="36"/>
@@ -95,7 +95,10 @@
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bda-93-KBz">
-                                                        <rect key="frame" x="0.0" y="296" width="390" height="35"/>
+                                                        <rect key="frame" x="0.0" y="319" width="390" height="55"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="ovG-8M-5JI"/>
+                                                        </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="로그인"/>
                                                     </button>
@@ -116,12 +119,12 @@
                                                     <constraint firstItem="xHT-J3-UF4" firstAttribute="leading" secondItem="7Qq-dh-vby" secondAttribute="leading" constant="19" id="ZoB-XR-ABE"/>
                                                     <constraint firstItem="sPC-DZ-EPB" firstAttribute="top" secondItem="lIv-cl-7gU" secondAttribute="bottom" id="bZA-1u-hVu"/>
                                                     <constraint firstItem="GmS-eC-lHi" firstAttribute="top" secondItem="7Qq-dh-vby" secondAttribute="top" id="blJ-gS-zoC"/>
+                                                    <constraint firstItem="Bda-93-KBz" firstAttribute="top" secondItem="P8x-yN-DLv" secondAttribute="bottom" constant="31" id="dRT-vn-kfP"/>
                                                     <constraint firstItem="jNd-h2-sKQ" firstAttribute="top" secondItem="APT-66-WeL" secondAttribute="bottom" constant="62" id="nGG-fp-4Hm"/>
                                                     <constraint firstItem="xHT-J3-UF4" firstAttribute="top" secondItem="sPC-DZ-EPB" secondAttribute="bottom" id="o8R-GP-wda"/>
                                                     <constraint firstAttribute="trailing" secondItem="xHT-J3-UF4" secondAttribute="trailing" constant="19" id="rp4-Aq-QvO"/>
                                                     <constraint firstAttribute="trailing" secondItem="sPC-DZ-EPB" secondAttribute="trailing" constant="19" id="sYz-aX-Nzk"/>
                                                     <constraint firstItem="lIv-cl-7gU" firstAttribute="top" secondItem="jNd-h2-sKQ" secondAttribute="bottom" id="t7m-T0-bvq"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Bda-93-KBz" secondAttribute="bottom" constant="87" id="toM-Cr-rAi"/>
                                                     <constraint firstAttribute="trailing" secondItem="lIv-cl-7gU" secondAttribute="trailing" constant="19" id="ttd-G8-ppC"/>
                                                 </constraints>
                                             </view>
@@ -129,7 +132,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="7Qq-dh-vby" firstAttribute="centerY" secondItem="aYD-gh-kKE" secondAttribute="centerY" id="XVw-Fg-Ogq"/>
-                                            <constraint firstItem="7Qq-dh-vby" firstAttribute="top" secondItem="aYD-gh-kKE" secondAttribute="top" constant="213" id="act-Y2-KAq"/>
+                                            <constraint firstItem="7Qq-dh-vby" firstAttribute="top" secondItem="aYD-gh-kKE" secondAttribute="top" constant="200" id="act-Y2-KAq"/>
                                             <constraint firstAttribute="trailing" secondItem="7Qq-dh-vby" secondAttribute="trailing" id="qeN-S4-EQU"/>
                                             <constraint firstItem="7Qq-dh-vby" firstAttribute="leading" secondItem="aYD-gh-kKE" secondAttribute="leading" id="zeF-ws-YsA"/>
                                         </constraints>

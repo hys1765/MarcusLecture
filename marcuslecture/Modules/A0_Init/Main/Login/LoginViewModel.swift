@@ -23,7 +23,7 @@ class LoginViewModel {
     
     init() {
         idText.map(checkEmailValid).bind(to: idValid).disposed(by: disposeBag)
-        idText.map(checkEmailValid).bind (to: idValid).disposed(by: disposeBag)
+        pwText.map(checkPasswordValid).bind (to: pwValid).disposed(by: disposeBag)
         
         Observable.combineLatest(idValid, pwValid, resultSelector: {$0 && $1}).bind(to: loginBtnEnabled).disposed(by: disposeBag)
     }
