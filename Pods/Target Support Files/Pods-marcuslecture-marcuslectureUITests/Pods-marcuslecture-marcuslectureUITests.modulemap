@@ -1,0 +1,6 @@
+framework module Pods_marcuslecture_marcuslectureUITests {
+  umbrella header "Pods-marcuslecture-marcuslectureUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
