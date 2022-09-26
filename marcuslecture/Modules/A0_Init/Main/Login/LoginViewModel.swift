@@ -14,12 +14,14 @@ import UIKit
 class LoginViewModel {
     
     var disposeBag = DisposeBag();
-    let idText : BehaviorSubject<String> = BehaviorSubject(value: "")
-    let pwText : BehaviorSubject<String> = BehaviorSubject(value: "")
+    let idText : BehaviorRelay<String> = BehaviorRelay(value: "")
+    let pwText : BehaviorRelay<String> =
+    BehaviorRelay(value: "")
     
-    let idValid : BehaviorSubject<Bool> = BehaviorSubject(value: false)
-    let pwValid : BehaviorSubject<Bool> = BehaviorSubject(value: false)
-    let loginBtnEnabled : BehaviorSubject<Bool> = BehaviorSubject(value: false)
+    let idValid : BehaviorRelay<Bool> = BehaviorRelay(value: false)
+    let pwValid : BehaviorRelay<Bool> =
+    BehaviorRelay(value: false)
+    let loginBtnEnabled : BehaviorRelay<Bool> = BehaviorRelay(value: false)
     
     init() {
         idText.map(checkEmailValid).bind(to: idValid).disposed(by: disposeBag)
