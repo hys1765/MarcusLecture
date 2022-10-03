@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="marcuslecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ayv-7S-7lL">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,30 +33,39 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csn-Rd-jZ7">
                                 <rect key="frame" x="0.0" y="750" width="390" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="100-29-6zJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="100-29-6zJ" userLabel="buttonFeed">
                                         <rect key="frame" x="0.0" y="20.000000000000004" width="135" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="photo.stack.fill" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="photo.stack.fill" catalog="system" title=" ">
                                             <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickFeed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MlH-Om-xGJ"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kd-BV-Kf3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kd-BV-Kf3" userLabel="buttonPencil">
                                         <rect key="frame" x="155" y="10" width="80" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="5oz-zv-7yw"/>
                                             <constraint firstAttribute="width" constant="80" id="l2n-ut-V9K"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system" title=" ">
                                             <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickPencil:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3OZ-2O-yWR"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-3O-MZa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-3O-MZa" userLabel="buttonProfile">
                                         <rect key="frame" x="265" y="20.000000000000004" width="125" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="person.crop.circle" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="person.crop.circle" catalog="system" title=" ">
                                             <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickProfile:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="knK-Fu-3nR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,6 +123,11 @@
                             <constraint firstItem="3tJ-bc-6xo" firstAttribute="bottom" secondItem="Csn-Rd-jZ7" secondAttribute="bottom" id="zHR-xz-dSn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonFeed" destination="100-29-6zJ" id="Axz-5q-viZ"/>
+                        <outlet property="buttonPencil" destination="6kd-BV-Kf3" id="Ssa-GZ-nL9"/>
+                        <outlet property="buttonProfile" destination="ErT-3O-MZa" id="FaY-mr-4Zz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +136,7 @@
         <!--Main Page View Controller-->
         <scene sceneID="3WS-NN-mtK">
             <objects>
-                <viewController id="WRT-k6-34W" customClass="MainPageViewController" sceneMemberID="viewController">
+                <viewController id="WRT-k6-34W" customClass="MainPageViewController" customModule="marcuslecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wqE-fM-gF3">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="702"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +159,7 @@
         <!--PencilStoryBoard-->
         <scene sceneID="G0S-Ry-pbO">
             <objects>
-                <viewControllerPlaceholder storyboardName="PencilStoryBoard" id="Ev6-0r-R0e" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="PencilStoryBoard" storyboardName="PencilStoryBoard" id="Ev6-0r-R0e" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="115-5m-ktC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1822" y="-50"/>
@@ -153,7 +167,7 @@
         <!--ProfileStoryBoard-->
         <scene sceneID="AdE-Cp-AEi">
             <objects>
-                <viewControllerPlaceholder storyboardName="ProfileStoryBoard" id="XOr-jD-Cf3" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="ProfileStoryBoard" storyboardName="ProfileStoryBoard" id="XOr-jD-Cf3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfj-OG-L7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1822" y="47"/>

@@ -11,29 +11,15 @@ class MainPageViewController: BasePageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initSetting()
+        removeSwipeGesture()
         // Do any additional setup after loading the view.
     }
     
     func initSetting(){
-        let vcFeed = UIViewController.getViewController("MainStoryBoard", "FeedStoryBoard")
-        let vcPencil = UIViewController.getViewController("MainStoryBoard", "PencilStoryBoard")
-        let vcProfile = UIViewController.getViewController("MainStoryBoard", "ProfileStoryBoard")
-        
-        
+        let vcFeed = UIViewController.getViewController("MainStoryBoard", "FeedStoryBoard") as! FeedViewController
+        let vcPencil = UIViewController.getViewController("MainStoryBoard", "PencilStoryBoard") as! PencilViewController
+        let vcProfile = UIViewController.getViewController("MainStoryBoard", "ProfileStoryBoard") as! ProfileViewController
+        addVC(addList: [vcFeed, vcPencil, vcProfile])
     }
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

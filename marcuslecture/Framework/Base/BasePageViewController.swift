@@ -62,7 +62,7 @@ open class BasePageViewController : UIPageViewController,
         
         if vcList.count > 0{
             
-            self.setViewControllers([vcList[0]], direction: .forward, animated: true) { (result) in
+            self.setViewControllers([vcList[0]], direction: .forward, animated: false) { (result) in
                 
             }
             
@@ -110,13 +110,11 @@ open class BasePageViewController : UIPageViewController,
                 }
             }
             
-            self.setViewControllers([vcList[index]], direction: anim, animated: true, completion: nil)
+            self.setViewControllers([vcList[index]], direction: anim, animated: false, completion: nil)
             
             self.currentIndex = index
             
             self.mCallback?.onPage(index)
-            
-            
         }
         
     }

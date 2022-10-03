@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var idField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
+        
     @IBOutlet weak var loginBtn: UIButton!
     
     
@@ -30,6 +30,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         bindInput()
         subscribe()
+    }
+    
+    @IBAction func onClickLoginPass(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.switchMain()
     }
     
     private func bindInput(){

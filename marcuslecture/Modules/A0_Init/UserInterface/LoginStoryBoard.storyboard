@@ -102,6 +102,14 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="로그인"/>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh8-eG-cd6">
+                                                        <rect key="frame" x="214" y="399" width="166" height="35"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="로그인 없이 둘러보기"/>
+                                                        <connections>
+                                                            <action selector="onClickLoginPass:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uId-xb-5lf"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -113,6 +121,7 @@
                                                     <constraint firstItem="GmS-eC-lHi" firstAttribute="leading" secondItem="7Qq-dh-vby" secondAttribute="leading" constant="19" id="AIL-Th-i74"/>
                                                     <constraint firstItem="jNd-h2-sKQ" firstAttribute="leading" secondItem="7Qq-dh-vby" secondAttribute="leading" constant="19" id="D71-Zd-bBf"/>
                                                     <constraint firstItem="Bda-93-KBz" firstAttribute="leading" secondItem="7Qq-dh-vby" secondAttribute="leading" id="D9z-6O-Wys"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Rh8-eG-cd6" secondAttribute="trailing" constant="10" id="Hvl-yo-tiX"/>
                                                     <constraint firstItem="lIv-cl-7gU" firstAttribute="leading" secondItem="7Qq-dh-vby" secondAttribute="leading" constant="19" id="JUR-3c-OMk"/>
                                                     <constraint firstItem="P8x-yN-DLv" firstAttribute="top" secondItem="xHT-J3-UF4" secondAttribute="bottom" constant="47" id="M8n-Kx-otN"/>
                                                     <constraint firstItem="APT-66-WeL" firstAttribute="top" secondItem="GmS-eC-lHi" secondAttribute="bottom" constant="5" id="PuK-04-Mjk"/>
@@ -120,6 +129,7 @@
                                                     <constraint firstItem="sPC-DZ-EPB" firstAttribute="top" secondItem="lIv-cl-7gU" secondAttribute="bottom" id="bZA-1u-hVu"/>
                                                     <constraint firstItem="GmS-eC-lHi" firstAttribute="top" secondItem="7Qq-dh-vby" secondAttribute="top" id="blJ-gS-zoC"/>
                                                     <constraint firstItem="Bda-93-KBz" firstAttribute="top" secondItem="P8x-yN-DLv" secondAttribute="bottom" constant="31" id="dRT-vn-kfP"/>
+                                                    <constraint firstItem="Rh8-eG-cd6" firstAttribute="top" secondItem="Bda-93-KBz" secondAttribute="bottom" constant="25" id="ikV-zr-9z6"/>
                                                     <constraint firstItem="jNd-h2-sKQ" firstAttribute="top" secondItem="APT-66-WeL" secondAttribute="bottom" constant="62" id="nGG-fp-4Hm"/>
                                                     <constraint firstItem="xHT-J3-UF4" firstAttribute="top" secondItem="sPC-DZ-EPB" secondAttribute="bottom" id="o8R-GP-wda"/>
                                                     <constraint firstAttribute="trailing" secondItem="xHT-J3-UF4" secondAttribute="trailing" constant="19" id="rp4-Aq-QvO"/>
