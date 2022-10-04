@@ -76,6 +76,10 @@ open class BasePageViewController : UIPageViewController,
         }
     }
     
+    public func removePagingGesture(){
+        self.view.isUserInteractionEnabled = false
+    }
+    
     public func setCallback(_ callback:BasePageCallback){
         mCallback = callback
     }

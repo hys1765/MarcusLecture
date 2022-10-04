@@ -13,6 +13,7 @@ class MainPageViewController: BasePageViewController {
         super.viewDidLoad()
         initSetting()
         removeSwipeGesture()
+        removePagingGesture()
         // Do any additional setup after loading the view.
     }
     
