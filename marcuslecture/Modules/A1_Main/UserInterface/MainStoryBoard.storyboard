@@ -131,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10.769230769230768" y="-34.123222748815166"/>
+            <point key="canvasLocation" x="266" y="-50"/>
         </scene>
         <!--Main Page View Controller-->
         <scene sceneID="3WS-NN-mtK">
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMT-OI-AZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="-34"/>
+            <point key="canvasLocation" x="1148" y="-50"/>
         </scene>
         <!--FeedStoryBoard-->
         <scene sceneID="iDm-BN-bCc">
@@ -154,7 +154,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="FeedStoryBoard" storyboardName="FeedStoryBoard" id="JMj-lN-YlK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LB5-DD-Aq4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="-146"/>
+            <point key="canvasLocation" x="1776" y="-157"/>
         </scene>
         <!--PencilStoryBoard-->
         <scene sceneID="G0S-Ry-pbO">
@@ -162,7 +162,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="PencilStoryBoard" storyboardName="PencilStoryBoard" id="Ev6-0r-R0e" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="115-5m-ktC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="-50"/>
+            <point key="canvasLocation" x="1782" y="-81"/>
         </scene>
         <!--ProfileStoryBoard-->
         <scene sceneID="AdE-Cp-AEi">
@@ -170,7 +170,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="ProfileStoryBoard" storyboardName="ProfileStoryBoard" id="XOr-jD-Cf3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfj-OG-L7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="47"/>
+            <point key="canvasLocation" x="1784" y="5"/>
         </scene>
     </scenes>
     <resources>

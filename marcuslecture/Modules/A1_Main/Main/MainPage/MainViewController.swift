@@ -31,15 +31,16 @@ class MainViewController : BaseViewControl {
         //        if let router = router,
     }
     
+  
+    override func viewDidLoad() {
+        MainViewController.mainInstance = self
+        initSetting()
+    }
+    
+    
     @IBOutlet weak var buttonFeed: UIButton!
     @IBOutlet weak var buttonPencil: UIButton!
     @IBOutlet weak var buttonProfile: UIButton!
-    
-    
-    override func viewDidLoad() {
-        initSetting()
-    }
-
     
     var pageVc:MainPageViewController? = nil
     static var mainInstance:MainViewController? = nil
@@ -53,6 +54,7 @@ class MainViewController : BaseViewControl {
             }
         }
         pageVc?.mCallback = BasePageCallback(onPage:{ page in self.setTopBar(page)})
+        
     }
     
     func displayFault(fault:String){
@@ -69,17 +71,14 @@ class MainViewController : BaseViewControl {
     
     
     @IBAction func onClickFeed(_ sender: Any) {
-        print("1 페이지 입니다.\(String(describing: pageVc))")
         pageVc?.goToPage(0)
     }
     
     @IBAction func onClickPencil(_ sender: Any) {
-        print("2 페이지 입니다.")
         pageVc?.goToPage(1)
     }
     
     @IBAction func onClickProfile(_ sender: Any) {
-        print("3 페이지 입니다.")
         pageVc?.goToPage(2)
     }
     

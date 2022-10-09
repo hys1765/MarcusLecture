@@ -12,8 +12,7 @@ class MainPageViewController: BasePageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initSetting()
-        removeSwipeGesture()
-        removePagingGesture()
+      
         // Do any additional setup after loading the view.
     }
     
@@ -22,5 +21,7 @@ class MainPageViewController: BasePageViewController {
         let vcPencil = UIViewController.getViewController("MainStoryBoard", "PencilStoryBoard") as! PencilViewController
         let vcProfile = UIViewController.getViewController("MainStoryBoard", "ProfileStoryBoard") as! ProfileViewController
         addVC(addList: [vcFeed, vcPencil, vcProfile])
+        removeSwipeGesture()
+        removePagingGesture()
     }
 }

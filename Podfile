@@ -6,6 +6,7 @@ target 'marcuslecture' do
   use_frameworks!
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SnapKit', '~> 5.6.0'
   # Pods for marcuslecture
 
   target 'marcuslectureTests' do

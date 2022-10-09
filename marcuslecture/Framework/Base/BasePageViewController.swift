@@ -57,17 +57,13 @@ open class BasePageViewController : UIPageViewController,
     }
     
     public func addVC(addList:[UIViewController]){
-        
         vcList = addList
-        
         if vcList.count > 0{
-            
             self.setViewControllers([vcList[0]], direction: .forward, animated: false) { (result) in
-                
             }
-            
         }
     }
+    
     public func removeSwipeGesture(){
         for view in self.view.subviews {
             if let subView = view as? UIScrollView {
@@ -77,7 +73,7 @@ open class BasePageViewController : UIPageViewController,
     }
     
     public func removePagingGesture(){
-        self.view.isUserInteractionEnabled = false
+        self.view.isUserInteractionEnabled = true
     }
     
     public func setCallback(_ callback:BasePageCallback){
@@ -120,7 +116,6 @@ open class BasePageViewController : UIPageViewController,
             
             self.mCallback?.onPage(index)
         }
-        
     }
     
     public override func setViewControllers(_ viewControllers: [UIViewController]?, direction: UIPageViewController.NavigationDirection, animated: Bool, completion: ((Bool) -> Void)? = nil) {
