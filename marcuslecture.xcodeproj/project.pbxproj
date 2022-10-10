@@ -46,6 +46,7 @@
 		ABE1C43328BE399100921AE8 /* marcuslectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1C43228BE399100921AE8 /* marcuslectureUITests.swift */; };
 		ABF7C69E28F2B0EC000DB183 /* FeedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7C69D28F2B0EC000DB183 /* FeedCollectionView.swift */; };
 		ABF7C6A028F2B8F2000DB183 /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF7C69F28F2B8F2000DB183 /* asset.xcassets */; };
+		ABF7C6A228F455AB000DB183 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7C6A128F455AB000DB183 /* FeedDetailViewController.swift */; };
 		CC0F78E0210E896DDCBF5536 /* Pods_marcuslecture_marcuslectureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F5C2CE268F036A8727D805 /* Pods_marcuslecture_marcuslectureUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		ABE1C43428BE399100921AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABF7C69D28F2B0EC000DB183 /* FeedCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionView.swift; sourceTree = "<group>"; };
 		ABF7C69F28F2B8F2000DB183 /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
+		ABF7C6A128F455AB000DB183 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		BB041E0510F1CA868B52FF1D /* Pods_marcuslecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marcuslecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153142FFC8E79707152A663 /* Pods-marcuslecture-marcuslectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture-marcuslectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-marcuslecture-marcuslectureUITests/Pods-marcuslecture-marcuslectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F514D6AB9A99EC98A5A4608C /* Pods-marcuslecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture.release.xcconfig"; path = "Target Support Files/Pods-marcuslecture/Pods-marcuslecture.release.xcconfig"; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				ABD1C88228E9EF8F0090AED9 /* FeedViewModel.swift */,
 				AB5E2CD028F16BA100D9DED2 /* FeedTableView.swift */,
 				ABF7C69D28F2B0EC000DB183 /* FeedCollectionView.swift */,
+				ABF7C6A128F455AB000DB183 /* FeedDetailViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -765,6 +768,7 @@
 				AB676C1D28E4A12B007ECD90 /* MainPageViewController.swift in Sources */,
 				ABE1C41228BE398700921AE8 /* ViewController.swift in Sources */,
 				AB676C2928E69A4D007ECD90 /* MarcusUtils.swift in Sources */,
+				ABF7C6A228F455AB000DB183 /* FeedDetailViewController.swift in Sources */,
 				AB3961A228D7051100CDAC60 /* SpalshViewController.swift in Sources */,
 				AB676C2328E69792007ECD90 /* BaseViewControl.swift in Sources */,
 				AB676C3D28E6A736007ECD90 /* ProfileViewModel.swift in Sources */,

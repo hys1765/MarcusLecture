@@ -65,11 +65,36 @@
                     </view>
                     <connections>
                         <outlet property="mFeedView" destination="f6L-Cq-Vhg" id="NJq-iR-23K"/>
+                        <segue destination="Ji4-5J-Gvx" kind="show" identifier="FeedDetailSegue" id="u1d-6X-vVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="16.923076923076923" y="-34.123222748815166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b0Z-vb-Orc">
+            <objects>
+                <viewController id="Ji4-5J-Gvx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bg2-33-hcf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7r-qR-n9f">
+                                <rect key="frame" x="0.0" y="81" width="390" height="503"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="fWj-jw-zep"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UCi-yO-cUm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ztn-zC-Obm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFZ-WM-OY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.84615384615381" y="-34.123222748815166"/>
         </scene>
     </scenes>
     <resources>
