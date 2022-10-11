@@ -10,48 +10,15 @@ import UIKit
 
 class FeedViewController : BaseViewControl{
     
-    var dummyData : [FeedGalleryModel] = [
-        FeedGalleryModel(feedImg: "Image1",name: "1",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image1",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-        FeedGalleryModel(feedImg: "Image2",name: "2",feedDate: "121212"),
-    ]
+    let viewModel = FeedViewModel()
+    var mItem : FeedGalleryModel?
     
-    
-//    private let mFeedTableView : FeedTableView = {
-//        let tableView = FeedTableView()
-//        tableView.translatesAutoresizingMaskIntoConstraints = false
-//        tableView.register(FeedTableViewCell.self, forCellReuseIdentifier:FeedTableViewCell.identifier)
-//        return tableView
-//    }()
-    
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-    {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?){
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
             setup()
     }
 
-    required init?(coder aDecoder: NSCoder)
-    {
+    required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
             setup()
     }
@@ -61,15 +28,23 @@ class FeedViewController : BaseViewControl{
     
     @IBOutlet weak var mFeedView: FeedCollectionView!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "FeedDetailSegue"{
+//            let selector = NSSelectorFromString("")
+            let vc = segue.destination as! FeedDetailViewController
+            vc.mFeed = mItem ?? FeedGalleryModel(feedImg: "", name: "", feedDate: "")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initSetting()
-        mFeedView.addData(data: dummyData)
+        
+        mFeedView.addData(data: viewModel.dummyData)
 //        mTableViewFeed.addList(dummyData, page: 1)
 //        mTableViewFeed.reloadData()
     }
-    
 
     
     private func initSetting(){
@@ -78,9 +53,15 @@ class FeedViewController : BaseViewControl{
         layout.scrollDirection = .vertical
         layout.sectionInset = .zero
         mFeedView.collectionViewLayout = layout
-//        mFeedView.scrollDirection = .vertical
-//        mFeedView.sectionInset = .vertica
-
+        mFeedView.mFeedCallback = FeedCallback(
+            onClick: { mItem in
+            self.mItem = mItem
+            print("mItem : \(mItem)")
+//            let vc = FeedDetailViewController(feed: mItem)
+//            self.navigationController?.pushViewController(vc, animated: true)
+            self.performSegue(withIdentifier: "FeedDetailSegue", sender: nil)
+            
+        })
     }
     
 

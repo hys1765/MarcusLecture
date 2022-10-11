@@ -47,6 +47,7 @@
 		ABF7C69E28F2B0EC000DB183 /* FeedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7C69D28F2B0EC000DB183 /* FeedCollectionView.swift */; };
 		ABF7C6A028F2B8F2000DB183 /* asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF7C69F28F2B8F2000DB183 /* asset.xcassets */; };
 		ABF7C6A228F455AB000DB183 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7C6A128F455AB000DB183 /* FeedDetailViewController.swift */; };
+		ABF7C6A428F45921000DB183 /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7C6A328F45921000DB183 /* FeedDetailViewModel.swift */; };
 		CC0F78E0210E896DDCBF5536 /* Pods_marcuslecture_marcuslectureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F5C2CE268F036A8727D805 /* Pods_marcuslecture_marcuslectureUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		ABF7C69D28F2B0EC000DB183 /* FeedCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionView.swift; sourceTree = "<group>"; };
 		ABF7C69F28F2B8F2000DB183 /* asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = asset.xcassets; sourceTree = "<group>"; };
 		ABF7C6A128F455AB000DB183 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		ABF7C6A328F45921000DB183 /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 		BB041E0510F1CA868B52FF1D /* Pods_marcuslecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marcuslecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153142FFC8E79707152A663 /* Pods-marcuslecture-marcuslectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture-marcuslectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-marcuslecture-marcuslectureUITests/Pods-marcuslecture-marcuslectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F514D6AB9A99EC98A5A4608C /* Pods-marcuslecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marcuslecture.release.xcconfig"; path = "Target Support Files/Pods-marcuslecture/Pods-marcuslecture.release.xcconfig"; sourceTree = "<group>"; };
@@ -364,11 +366,11 @@
 		AB676C3128E6A64F007ECD90 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ABF7C6A528F4605E000DB183 /* FeedDetail */,
 				ABD1C88028E9EF860090AED9 /* FeedViewController.swift */,
 				ABD1C88228E9EF8F0090AED9 /* FeedViewModel.swift */,
 				AB5E2CD028F16BA100D9DED2 /* FeedTableView.swift */,
 				ABF7C69D28F2B0EC000DB183 /* FeedCollectionView.swift */,
-				ABF7C6A128F455AB000DB183 /* FeedDetailViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -499,6 +501,15 @@
 				ABE1C43428BE399100921AE8 /* Info.plist */,
 			);
 			path = marcuslectureUITests;
+			sourceTree = "<group>";
+		};
+		ABF7C6A528F4605E000DB183 /* FeedDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7C6A328F45921000DB183 /* FeedDetailViewModel.swift */,
+				ABF7C6A128F455AB000DB183 /* FeedDetailViewController.swift */,
+			);
+			path = FeedDetail;
 			sourceTree = "<group>";
 		};
 		BE2E7A19A1A87D69E779B8AB /* Pods */ = {
@@ -777,6 +788,7 @@
 				ABD1C88128E9EF860090AED9 /* FeedViewController.swift in Sources */,
 				AB676C2D28E69DDB007ECD90 /* BannerUIView.swift in Sources */,
 				AB676C2728E69A0E007ECD90 /* Toast.swift in Sources */,
+				ABF7C6A428F45921000DB183 /* FeedDetailViewModel.swift in Sources */,
 				ABF7C69E28F2B0EC000DB183 /* FeedCollectionView.swift in Sources */,
 				AB676C3B28E6A72D007ECD90 /* ProfileViewController.swift in Sources */,
 				AB676C2028E69490007ECD90 /* BasePageViewController.swift in Sources */,

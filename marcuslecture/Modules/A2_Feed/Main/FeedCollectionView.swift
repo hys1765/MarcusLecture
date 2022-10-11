@@ -95,13 +95,23 @@ class FeedCollectionViewCell : UICollectionViewCell{
         addContentView()
         autoLayout()
         img.image = UIImage(named: item.feedImg) ?? UIImage()
+        
     }
     
     private func addContentView(){
         self.contentView.addSubview(img)
         img.contentMode = .scaleAspectFill
         img.clipsToBounds = true
+//        img.addTarget(self, action: #selector(onImgClick(sender:)), for: .touchUpInside)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onImgClick))
+        img.addGestureRecognizer(tapGesture)
+        img.isUserInteractionEnabled = true
     }
+    
+    @objc func onImgClick(sender : UITapGestureRecognizer){
+        mCallback?.onClick(mItem ?? FeedGalleryModel(feedImg: "", name: "", feedDate: ""))
+    }
+
     
     private func autoLayout(){
         img.snp.makeConstraints { make in

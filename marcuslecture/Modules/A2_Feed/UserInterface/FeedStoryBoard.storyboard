@@ -72,25 +72,45 @@
             </objects>
             <point key="canvasLocation" x="16.923076923076923" y="-34.123222748815166"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed Detail View Controller-->
         <scene sceneID="b0Z-vb-Orc">
             <objects>
-                <viewController id="Ji4-5J-Gvx" sceneMemberID="viewController">
+                <viewController id="Ji4-5J-Gvx" customClass="FeedDetailViewController" customModule="marcuslecture" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bg2-33-hcf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7r-qR-n9f">
-                                <rect key="frame" x="0.0" y="81" width="390" height="503"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="fWj-jw-zep"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q7r-qR-n9f">
+                                <rect key="frame" x="0.0" y="77" width="390" height="541"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRe-XW-qwQ">
+                                <rect key="frame" x="8" y="15" width="44" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="17" minY="17" maxX="17" maxY="17"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickClose:" destination="Ji4-5J-Gvx" eventType="touchUpInside" id="ARj-4S-TK2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UCi-yO-cUm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q7r-qR-n9f" firstAttribute="leading" secondItem="UCi-yO-cUm" secondAttribute="leading" id="4mB-MV-o5e"/>
+                            <constraint firstItem="TRe-XW-qwQ" firstAttribute="leading" secondItem="UCi-yO-cUm" secondAttribute="leading" constant="8" id="Bn1-3w-HYe"/>
+                            <constraint firstItem="q7r-qR-n9f" firstAttribute="top" secondItem="TRe-XW-qwQ" secondAttribute="bottom" constant="10" id="YaS-IJ-wN4"/>
+                            <constraint firstItem="UCi-yO-cUm" firstAttribute="bottom" secondItem="q7r-qR-n9f" secondAttribute="bottom" constant="169" id="pAj-KR-1cZ"/>
+                            <constraint firstItem="TRe-XW-qwQ" firstAttribute="top" secondItem="bg2-33-hcf" secondAttribute="top" constant="15" id="sWg-bu-EDb"/>
+                            <constraint firstItem="q7r-qR-n9f" firstAttribute="top" secondItem="UCi-yO-cUm" secondAttribute="top" constant="30" id="xqL-ks-AVD"/>
+                            <constraint firstItem="q7r-qR-n9f" firstAttribute="centerX" secondItem="bg2-33-hcf" secondAttribute="centerX" id="yaf-DL-rtx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ztn-zC-Obm"/>
+                    <connections>
+                        <outlet property="feedImg" destination="q7r-qR-n9f" id="wfV-UK-4ft"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFZ-WM-OY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
