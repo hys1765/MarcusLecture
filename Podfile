@@ -7,6 +7,8 @@ target 'marcuslecture' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SnapKit', '~> 5.6.0'
+  pod 'Alamofire', '~> 5.2'
+  
   # Pods for marcuslecture
 
   target 'marcuslectureTests' do

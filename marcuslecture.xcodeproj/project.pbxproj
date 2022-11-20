@@ -19,6 +19,8 @@
 		AB540E1E28DA046E00FA97A5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB540E1D28DA046E00FA97A5 /* LoginViewModel.swift */; };
 		AB5E2CCF28F1099600D9DED2 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E2CCE28F1099600D9DED2 /* BaseTableView.swift */; };
 		AB5E2CD128F16BA100D9DED2 /* FeedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E2CD028F16BA100D9DED2 /* FeedTableView.swift */; };
+		AB5E994A2929E73A00619781 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5E99492929E73A00619781 /* WebKit.framework */; };
+		AB5E994C2929E87500619781 /* SearchWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E994B2929E87500619781 /* SearchWebViewController.swift */; };
 		AB676C1D28E4A12B007ECD90 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB676C1C28E4A12B007ECD90 /* MainPageViewController.swift */; };
 		AB676C2028E69490007ECD90 /* BasePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB676C1F28E69490007ECD90 /* BasePageViewController.swift */; };
 		AB676C2328E69792007ECD90 /* BaseViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB676C2228E69792007ECD90 /* BaseViewControl.swift */; };
@@ -84,6 +86,8 @@
 		AB540E1D28DA046E00FA97A5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AB5E2CCE28F1099600D9DED2 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		AB5E2CD028F16BA100D9DED2 /* FeedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableView.swift; sourceTree = "<group>"; };
+		AB5E99492929E73A00619781 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AB5E994B2929E87500619781 /* SearchWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWebViewController.swift; sourceTree = "<group>"; };
 		AB676C1C28E4A12B007ECD90 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		AB676C1F28E69490007ECD90 /* BasePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageViewController.swift; sourceTree = "<group>"; };
 		AB676C2228E69792007ECD90 /* BaseViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControl.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5E994A2929E73A00619781 /* WebKit.framework in Frameworks */,
 				92A3F5455AF91802BA0A5741 /* Pods_marcuslecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +161,7 @@
 		5BB049392A3D6DEB31F22708 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB5E99492929E73A00619781 /* WebKit.framework */,
 				BB041E0510F1CA868B52FF1D /* Pods_marcuslecture.framework */,
 				43F5C2CE268F036A8727D805 /* Pods_marcuslecture_marcuslectureUITests.framework */,
 				6226F96A0143B04E29CF64F7 /* Pods_marcuslectureTests.framework */,
@@ -380,6 +386,7 @@
 			children = (
 				AB676C4028E6A757007ECD90 /* PencilViewModel.swift */,
 				AB676C4228E6A764007ECD90 /* PencilViewController.swift */,
+				AB5E994B2929E87500619781 /* SearchWebViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -783,6 +790,7 @@
 				AB3961A228D7051100CDAC60 /* SpalshViewController.swift in Sources */,
 				AB676C2328E69792007ECD90 /* BaseViewControl.swift in Sources */,
 				AB676C3D28E6A736007ECD90 /* ProfileViewModel.swift in Sources */,
+				AB5E994C2929E87500619781 /* SearchWebViewController.swift in Sources */,
 				ABE1C41828BE398700921AE8 /* marcuslecture.xcdatamodeld in Sources */,
 				ABE1C40E28BE398700921AE8 /* AppDelegate.swift in Sources */,
 				ABD1C88128E9EF860090AED9 /* FeedViewController.swift in Sources */,

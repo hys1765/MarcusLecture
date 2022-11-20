@@ -8,6 +8,10 @@
 import UIKit
 
 class PencilViewController: BaseViewControl {
+    
+    @IBOutlet weak var searchTextField: UITextField!
+    let mViewModel = PencilViewModel()
+    
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
@@ -21,7 +25,7 @@ class PencilViewController: BaseViewControl {
         setup()
     }
     private func setup(){
-        
+        mViewModel.getTest()
     }
     
     override func viewDidLoad() {
@@ -30,7 +34,22 @@ class PencilViewController: BaseViewControl {
         // Do any additional setup after loading the view.
     }
     
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func onClickedSearch(_ sender: Any) {
+        let searchText = searchTextField.text!
+        if let navigationController = self.navigationController{
+            if !(navigationController.topViewController?.description.contains("WebViewController"))!{
+            
+            }
+            
+        }
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
